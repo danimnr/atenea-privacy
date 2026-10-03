@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
@@ -23,32 +23,56 @@
 </head>
 <body>
 
+<!-- Mismo texto que https://atenea.sbs/privacidad (atenea-web,
+     src/pages/privacidad.astro). Si se cambia uno, cambiar el otro. -->
+
 <h1>Política de Privacidad de Atenea</h1>
-<p class="fecha">Última actualización: 6 de agosto de 2026</p>
+<p class="fecha">Última actualización: 4 de octubre de 2026</p>
 
-<p>D.A.S. Interactive Software ("nosotros") ha desarrollado la aplicación Atenea como una aplicación gratuita. Este documento se utiliza para informar a los usuarios sobre nuestras políticas en materia de recopilación, uso y divulgación de información personal.</p>
+<p>D.A.S. Interactive Software ("nosotros") ha desarrollado la aplicación Atenea (móvil, web y escritorio). Este documento informa a los usuarios sobre nuestras políticas de recopilación, uso y divulgación de información personal.</p>
 
-<h2>Recopilación y uso de información</h2>
-<p>Atenea funciona completamente sin conexión a internet. La aplicación no recopila, almacena en servidores externos, ni transmite ningún dato personal del usuario. Toda la información que introduces en la aplicación (tareas, títulos, descripciones, fechas, horas y preferencias de personalización) se almacena únicamente en tu propio dispositivo, en una base de datos local.</p>
-<p>No utilizamos cuentas de usuario, registros ni sistemas de autenticación. No recopilamos identificadores de dispositivo, ubicación, ni ningún otro dato con fines de análisis, publicidad o de cualquier otra índole.</p>
+<h2>Uso sin cuenta (modo local)</h2>
+<p>Por defecto, Atenea funciona completamente sin conexión a internet y sin necesidad de crear ninguna cuenta. Toda la información que introduces (tareas, títulos, descripciones, fechas, horas y preferencias de personalización) se almacena únicamente en tu propio dispositivo o navegador, y nunca sale de ahí a menos que actives la sincronización descrita a continuación.</p>
 
-<h2>Permisos utilizados por la aplicación</h2>
-<p>Atenea solicita los siguientes permisos del sistema, exclusivamente para su funcionamiento local:</p>
+<h2>Sincronización opcional con tu cuenta de Google</h2>
+<p>Si eliges iniciar sesión con tu cuenta de Google (opcional, nunca obligatorio para usar la app), Atenea recopila y almacena en nuestros servidores (Google Firebase) los siguientes datos, asociados a tu cuenta:</p>
+<ul>
+  <li>Tu nombre, dirección de correo electrónico y foto de perfil, proporcionados por Google al iniciar sesión.</li>
+  <li>Un identificador de usuario (ID) que vincula tus datos a tu cuenta.</li>
+  <li>El contenido de tus tareas (título, descripción, fecha, hora y prioridad), para que estén disponibles en todos tus dispositivos.</li>
+</ul>
+<p>Estos datos se usan exclusivamente para el funcionamiento de la app: autenticarte, sincronizar tus tareas entre dispositivos y gestionar tu cuenta. No los usamos con fines publicitarios, de analítica de terceros ni los compartimos con otras organizaciones o empresas. Se transmiten siempre mediante conexión cifrada (HTTPS/TLS) y se almacenan en la infraestructura de Google Firebase, que actúa como proveedor de almacenamiento bajo nuestro control, no como un tercero independiente.</p>
+<p>Puedes cerrar sesión en cualquier momento desde Ajustes, lo que deja de sincronizar nuevos datos pero no borra lo ya guardado en el servidor. Para borrar tu cuenta y todos los datos asociados, consulta <a href="https://atenea.sbs/eliminar-cuenta">cómo solicitar la eliminación de tu cuenta</a>.</p>
+
+<h2>Conexión opcional con Google Calendar</h2>
+<p>Si has iniciado sesión, puedes conectar además tus calendarios de Google para ver sus eventos en Atenea como tareas. Es opcional y está desactivado hasta que tú lo actives. Al hacerlo, Google te pide un permiso aparte, de <strong>solo lectura</strong> sobre tus calendarios.</p>
+<p>Con ese permiso, Atenea accede únicamente a:</p>
+<ul>
+  <li>La lista de tus calendarios (su nombre), para que elijas cuáles conectar.</li>
+  <li>Los eventos de los calendarios que tú elijas, desde 30 días atrás hasta un año adelante: título, descripción, lugar, fecha y horas de inicio y fin.</li>
+</ul>
+<p>Esos eventos se guardan en tu cuenta de Atenea como tareas (junto con qué calendarios has conectado y un identificador de cada evento, para no duplicarlos), y solo se usan para mostrártelos en Atenea y mantenerlos al día en tus dispositivos. La lectura se hace directamente desde tu dispositivo o navegador a Google: el permiso de acceso no se guarda en nuestros servidores.</p>
+<p>Atenea <strong>nunca modifica ni borra nada en Google Calendar</strong>. No usamos estos datos para publicidad, no los vendemos ni los compartimos con terceros, ninguna persona los lee y no se usan para entrenar modelos de inteligencia artificial.</p>
+<p>El uso que Atenea hace de la información recibida de las API de Google se ajusta a la <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos de Usuario de los Servicios de API de Google</a>, incluidos los requisitos de Uso Limitado.</p>
+<p>Puedes desconectar un calendario cuando quieras desde Ajustes &gt; Google Calendar, eligiendo si sus tareas se quitan de Atenea o se conservan. También puedes retirar el permiso por completo desde <a href="https://myaccount.google.com/permissions">los permisos de tu cuenta de Google</a>. Si eliminas tu cuenta de Atenea, estas tareas se borran con el resto de tus datos.</p>
+
+<h2>Permisos utilizados por la aplicación móvil</h2>
+<p>Atenea solicita los siguientes permisos del sistema, exclusivamente para su funcionamiento:</p>
 <ul>
   <li><strong>Notificaciones:</strong> para mostrarte recordatorios de tus propias tareas programadas.</li>
   <li><strong>Alarmas y recordatorios exactos:</strong> para que las notificaciones de tus tareas se muestren puntualmente.</li>
-  <li><strong>Almacenamiento (al exportar/importar):</strong> únicamente cuando tú decides exportar o importar manualmente tu calendario en formato .ics, para guardar o leer ese archivo en el almacenamiento de tu dispositivo.</li>
+  <li><strong>Almacenamiento (al exportar/importar):</strong> únicamente cuando tú decides exportar o importar manualmente tu calendario en formato .ics.</li>
 </ul>
-<p>Ninguno de estos permisos se utiliza para recopilar información con fines distintos a los descritos.</p>
+<p>Ninguno de estos permisos se usa para recopilar información con fines distintos a los descritos.</p>
 
 <h2>Servicios de terceros</h2>
-<p>Atenea no integra servicios de análisis, publicidad, ni SDKs de terceros que recopilen datos del usuario. La aplicación incluye un enlace opcional a la plataforma externa Ko-fi, únicamente si el usuario decide voluntariamente apoyar el desarrollo de la aplicación; este enlace abre el navegador del dispositivo y no comparte ningún dato de la aplicación con dicha plataforma.</p>
+<p>Atenea no integra servicios de publicidad ni SDKs de terceros que recopilen datos del usuario más allá de Google Firebase (Autenticación y base de datos), necesario para la sincronización opcional descrita arriba, y la API de Google Calendar, solo si conectas tus calendarios. La aplicación incluye un enlace opcional a la plataforma externa Ko-fi, únicamente si decides voluntariamente apoyar el desarrollo; este enlace abre tu navegador y no comparte ningún dato de la aplicación con dicha plataforma.</p>
 
 <h2>Cambios a esta Política de Privacidad</h2>
-<p>Podemos actualizar esta Política de Privacidad de vez en cuando. Se recomienda revisar esta página periódicamente para conocer cualquier cambio. Los cambios entrarán en vigor inmediatamente después de su publicación en esta página.</p>
+<p>Podemos actualizar esta Política de Privacidad de vez en cuando. Se recomienda revisarla periódicamente. Los cambios entran en vigor inmediatamente después de su publicación en esta página.</p>
 
 <h2>Contacto</h2>
-<p>Si tienes alguna pregunta sobre esta Política de Privacidad, puedes contactarnos a través de nuestra página de Ko-fi: <a href="https://ko-fi.com/danidev_mnr">ko-fi.com/danidev_mnr</a>.</p>
+<p>Si tienes alguna pregunta sobre esta Política de Privacidad, puedes escribirnos a <a href="mailto:dasinteractivesoftware@gmail.com">dasinteractivesoftware@gmail.com</a>.</p>
 
 <footer>
   D.A.S. Interactive Software
@@ -56,4 +80,3 @@
 
 </body>
 </html>
-<!-- redeploy -->
